@@ -1,0 +1,4 @@
+EmpID,Name,SickDays,VacationDays
+1,Devin Knight,4,10
+2,Brian Knight,5,14
+3,Mike Davis,0,9

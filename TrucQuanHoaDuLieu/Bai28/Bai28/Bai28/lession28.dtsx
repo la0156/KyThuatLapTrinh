@@ -1,0 +1,1306 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/13/2021 5:45:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ADMIN"
+  DTS:CreatorName="ADMIN\Admin"
+  DTS:DTSID="{529FCB2E-F96A-4186-9BE0-45A8D2225247}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{3F75A06C-DF02-442B-97AC-59BB224FC7EC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AdventureWorksDW2012]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{009EA990-8990-42A9-BC5F-07C722539B3D}"
+      DTS:ObjectName="AdventureWorksDW2012">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ADMIN;Initial Catalog=AdventureWorksDW2012;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Campaign1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F5CE3B5F-9BE0-4ACB-9B3E-2CA22D85C21D}"
+      DTS:ObjectName="Campaign1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Admin\Desktop\TrucQuanHoaDuLieu\Bai28\Campaign1.txt.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{9B601B5C-08B8-401C-820C-593982A0636C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MiddleName"
+              DTS:DTSID="{543750D8-3F70-4723-856D-9916E3034A7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{DC9872C9-B7F9-48A1-8168-B440385E7BFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AddressLine1"
+              DTS:DTSID="{B378B3E0-49A1-4B69-8A3E-37F32D83B31B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AddressLine2"
+              DTS:DTSID="{73D4D5C9-C729-4A72-A227-A6818E42CF56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{9875AF0E-8F28-4B33-8816-8A105DC0A6AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{3D58C4EB-35CC-441C-A7B2-1FB5CA5E4A4A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GeographyKey"
+              DTS:DTSID="{71AB65DF-25B6-4D07-92BB-E5C1678E537B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateProvinceCode"
+              DTS:DTSID="{97137DD8-212A-44AB-85BD-BAC1A02198FA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Campaign2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B1F8D2D6-645C-4886-94F9-8904878DA849}"
+      DTS:ObjectName="Campaign2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Admin\Desktop\TrucQuanHoaDuLieu\Bai28\Campaign2.txt.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{B26C5E10-2627-413B-8F55-0AD123A8A471}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MiddleName"
+              DTS:DTSID="{224014F9-ECFF-4D44-82AF-6FC9F878299C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{7B6FB01C-EDD9-4D01-A0D8-D9AD1C847C40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AddressLine1"
+              DTS:DTSID="{927C241A-2191-4625-882C-61C2EA98DB7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AddressLine2"
+              DTS:DTSID="{9891FF48-A76A-4EC6-8BE7-F25749C684EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{02165B0B-A614-47AC-A5DA-4474B3AA4DE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{796CA214-D383-4C22-B2B7-BD431F19C11C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GeographyKey"
+              DTS:DTSID="{0CA2B4C9-1D54-43B6-810C-30AB39D3F67F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateProvinceCode"
+              DTS:DTSID="{1837275E-1CF5-4816-ACEF-D29BA38A2771}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Regional Mailing List"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{48C61EFA-850B-4FC2-9203-0878D368C8F1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Regional Mailing List"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Campaign1 Mailing List"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Campaign1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Campaign1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[MiddleName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MiddleName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[MiddleName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[AddressLine1]"
+                      cachedDataType="wstr"
+                      cachedLength="120"
+                      cachedName="AddressLine1"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine1]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[AddressLine2]"
+                      cachedDataType="wstr"
+                      cachedLength="120"
+                      cachedName="AddressLine2"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine2]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[GeographyKey]"
+                      cachedDataType="i4"
+                      cachedName="GeographyKey"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[GeographyKey]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].Columns[StateProvinceCode]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="StateProvinceCode"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="20"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[GeographyKey]"
+                      dataType="i4"
+                      name="GeographyKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="StateProvinceCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Campaign2 Mailing List"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Campaign2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Campaign2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[MiddleName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MiddleName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[MiddleName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[AddressLine1]"
+                      cachedDataType="wstr"
+                      cachedLength="120"
+                      cachedName="AddressLine1"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine1]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[AddressLine2]"
+                      cachedDataType="wstr"
+                      cachedLength="120"
+                      cachedName="AddressLine2"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine2]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[GeographyKey]"
+                      cachedDataType="i4"
+                      cachedName="GeographyKey"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[GeographyKey]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]" />
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].Columns[StateProvinceCode]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="StateProvinceCode"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine1]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[AddressLine2]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="20"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[GeographyKey]"
+                      dataType="i4"
+                      name="GeographyKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input].ExternalColumns[StateProvinceCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="StateProvinceCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\DFT - Regional Mailing List\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input].Columns[StateProvinceCode]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="StateProvinceCode"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Campaign1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Campaign1"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]} == "FL" || #{Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]} == "GA"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">StateProvinceCode == "FL" || StateProvinceCode == "GA"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Campaign2]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Campaign2"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]} == "CA" || #{Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]} == "WA"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">StateProvinceCode == "CA" || StateProvinceCode == "WA"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[No Ad Campaign]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="No Ad Campaign"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Regional Mailing List\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT GeographyKey, StateProvinceCode
+FROM DimGeography</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT GeographyKey, StateProvinceCode
+FROM DimGeography) [refTable]
+where [refTable].[GeographyKey] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="GeographyKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StateProvinceCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Regional Mailing List\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AdventureWorksDW2012]"
+                  connectionManagerRefId="Package.ConnectionManagers[AdventureWorksDW2012]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input].Columns[GeographyKey]"
+                      cachedDataType="i4"
+                      cachedName="GeographyKey"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">GeographyKey</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="3"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output].Columns[StateProvinceCode]"
+                      name="StateProvinceCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">StateProvinceCode</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Regional Mailing List\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select FirstName,
+MiddleName,
+LastName,
+AddressLine1,
+AddressLine2,
+EmailAddress,
+Phone,
+GeographyKey
+From DimCustomer</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Regional Mailing List\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AdventureWorksDW2012]"
+                  connectionManagerRefId="Package.ConnectionManagers[AdventureWorksDW2012]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                      name="MiddleName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AddressLine1]"
+                      length="120"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine1]"
+                      name="AddressLine1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AddressLine2]"
+                      length="120"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[AddressLine2]"
+                      name="AddressLine2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      length="20"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeographyKey]"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeographyKey]"
+                      name="GeographyKey"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AddressLine1]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AddressLine2]"
+                      dataType="wstr"
+                      length="120"
+                      name="AddressLine2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="20"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeographyKey]"
+                      dataType="i4"
+                      name="GeographyKey" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                      name="MiddleName" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AddressLine1]"
+                      dataType="wstr"
+                      length="120"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AddressLine1]"
+                      name="AddressLine1" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AddressLine2]"
+                      dataType="wstr"
+                      length="120"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AddressLine2]"
+                      name="AddressLine2" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeographyKey]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeographyKey]"
+                      name="GeographyKey" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Regional Mailing List.Paths[Campaign1]"
+              endId="Package\DFT - Regional Mailing List\Campaign1 Mailing List.Inputs[Flat File Destination Input]"
+              name="Campaign1"
+              startId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Campaign1]" />
+            <path
+              refId="Package\DFT - Regional Mailing List.Paths[Campaign2]"
+              endId="Package\DFT - Regional Mailing List\Campaign2 Mailing List.Inputs[Flat File Destination Input]"
+              name="Campaign2"
+              startId="Package\DFT - Regional Mailing List\Conditional Split.Outputs[Campaign2]" />
+            <path
+              refId="Package\DFT - Regional Mailing List.Paths[Lookup Match Output]"
+              endId="Package\DFT - Regional Mailing List\Conditional Split.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\DFT - Regional Mailing List\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\DFT - Regional Mailing List.Paths[OLE DB Source Output]"
+              endId="Package\DFT - Regional Mailing List\Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT - Regional Mailing List\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="204,41.6"
+          Id="Package\DFT - Regional Mailing List"
+          TopLeft="260.500004342624,64.3823537669793" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Regional Mailing List">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\DFT - Regional Mailing List\OLE DB Source"
+          TopLeft="345.500005790166,37.6176475092614" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\DFT - Regional Mailing List\Lookup"
+          TopLeft="364.071434166967,102.029412697756" />
+        <EdgeLayout
+          Id="Package\DFT - Regional Mailing List.Paths[OLE DB Source Output]"
+          TopLeft="420.385719978566,79.2176475092614">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.8117651884944"
+              Start="0,0"
+              End="0,15.3117651884944">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.3117651884944" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\DFT - Regional Mailing List\Conditional Split"
+          TopLeft="342.642861862572,182.500001640881" />
+        <EdgeLayout
+          Id="Package\DFT - Regional Mailing List.Paths[Lookup Match Output]"
+          TopLeft="420.157148014769,143.629412697756">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.8705889431251"
+              Start="0,0"
+              End="0,31.3705889431251">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.3705889431251" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,9.88060697156253,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="186.4,41.6"
+          Id="Package\DFT - Regional Mailing List\Campaign1 Mailing List"
+          TopLeft="113.357144693939,246.464708263239" />
+        <NodeLayout
+          Size="186.4,41.6"
+          Id="Package\DFT - Regional Mailing List\Campaign2 Mailing List"
+          TopLeft="541.928580563896,236.464708627879" />
+        <EdgeLayout
+          Id="Package\DFT - Regional Mailing List.Paths[Campaign1]"
+          TopLeft="342.642861862572,203.300001640881">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-42.8857171686327,63.964706622358"
+              Start="0,0"
+              End="-35.3857171686327,63.964706622358">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-17.4428585843164,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17.4428585843164,0"
+                    Point2="-21.4428585843164,0"
+                    Point3="-21.4428585843164,4" />
+                  <mssgle:LineSegment
+                    End="-21.4428585843164,59.964706622358" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.4428585843164,59.964706622358"
+                    Point2="-21.4428585843164,63.964706622358"
+                    Point3="-25.4428585843164,63.964706622358" />
+                  <mssgle:LineSegment
+                    End="-35.3857171686327,63.964706622358" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-46.5259445218164,-17.4677734375,50.166171875,11.4677734375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Regional Mailing List.Paths[Campaign2]"
+          TopLeft="497.042861862572,203.300001640881">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.8857187013241,53.9647069869982"
+              Start="0,0"
+              End="37.3857187013241,53.9647069869982">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.442859350662,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.442859350662,0"
+                    Point2="22.442859350662,0"
+                    Point3="22.442859350662,4" />
+                  <mssgle:LineSegment
+                    End="22.442859350662,49.9647069869982" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.442859350662,49.9647069869982"
+                    Point2="22.442859350662,53.9647069869982"
+                    Point3="26.442859350662,53.9647069869982" />
+                  <mssgle:LineSegment
+                    End="37.3857187013241,53.9647069869982" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.82577346183795,-17.4873046875,50.537265625,11.4873046875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Regional Mailing List\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Regional Mailing List\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

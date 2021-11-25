@@ -1,0 +1,16 @@
+Document Control,5
+Engineering,6
+Executive,3
+Facilities and Maintenance,7
+Finance,10
+Human Resources,6
+Information Services,10
+Marketing,10
+Production,179
+Production Control,7
+Purchasing,14
+Quality Assurance,6
+Research and Development,4
+Sales,18
+Shipping and Receiving,6
+Tool Design,5

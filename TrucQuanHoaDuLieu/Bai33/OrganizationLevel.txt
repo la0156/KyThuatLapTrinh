@@ -1,0 +1,27 @@
+509647174,adventure-works\roberto0,2,Engineering Manager,1974-11-12,M,M,2007-11-11
+253022876,adventure-works\kevin0,2,Marketing Assistant,1987-05-03,S,M,2007-01-26
+222969461,adventure-works\john5,2,Marketing Specialist,1978-03-06,S,M,2011-02-07
+52541318,adventure-works\mary2,2,Marketing Assistant,1978-01-29,S,F,2011-02-14
+323403273,adventure-works\wanida0,2,Marketing Assistant,1975-03-17,M,F,2011-01-07
+243322160,adventure-works\terry0,2,Marketing Specialist,1986-02-04,M,M,2009-03-02
+95958330,adventure-works\sariya0,2,Marketing Specialist,1987-05-21,S,M,2008-12-12
+767955365,adventure-works\mary0,2,Marketing Specialist,1962-09-13,M,F,2009-01-12
+72636981,adventure-works\jill0,2,Marketing Specialist,1979-06-18,M,F,2009-01-18
+277173473,adventure-works\peter0,2,Production Control Manager,1982-11-03,M,M,2008-12-01
+398223854,adventure-works\hazem0,2,Quality Assurance Manager,1977-10-26,S,M,2009-02-28
+685233686,adventure-works\ascott0,2,Master Scheduler,1968-09-17,S,M,2008-12-12
+141165819,adventure-works\gary1,2,Facilities Manager,1971-02-18,M,M,2009-12-02
+535145551,adventure-works\paula0,2,Human Resources Manager,1976-02-11,M,F,2008-12-06
+30845,adventure-works\david6,2,Accounts Manager,1983-07-08,M,M,2009-01-30
+121491555,adventure-works\wendy0,2,Finance Manager,1984-10-11,S,F,2008-12-25
+231203233,adventure-works\david5,2,Assistant to the Chief Financial Officer,1964-06-21,S,M,2009-01-12
+858323870,adventure-works\stephanie0,2,Network Manager,1984-03-25,S,F,2009-02-04
+58317344,adventure-works\karen1,2,Application Specialist,1978-05-19,S,F,2009-02-16
+314747499,adventure-works\ramesh0,2,Application Specialist,1988-03-13,S,M,2009-02-03
+671089628,adventure-works\dan0,2,Application Specialist,1987-05-26,M,M,2009-01-11
+643805155,adventure-works\françois0,2,Database Administrator,1975-05-17,S,M,2009-01-17
+929666391,adventure-works\dan1,2,Database Administrator,1976-01-06,M,M,2009-01-22
+525932996,adventure-works\janaina0,2,Application Specialist,1985-01-30,M,F,2008-12-23
+502097814,adventure-works\stephen0,2,North American Sales Manager,1951-10-17,M,M,2011-01-04
+481044938,adventure-works\syed0,2,Pacific Sales Manager,1975-01-11,M,M,2013-03-14
+982310417,adventure-works\amy0,2,European Sales Manager,1957-09-20,M,F,2012-04-16

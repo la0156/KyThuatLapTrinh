@@ -1,0 +1,6 @@
+Carla,C,Chapman,1568 Delta Fair Blvd.,,carla5@adventure-works.com,367-555-0181,421,GA
+Shannon,A,Li,5243 Harmony Way,,shannon3@adventure-works.com,757-555-0175,403,FL
+Louis,S,Anand,1256 American Beauty Dr,,louis37@adventure-works.com,397-555-0169,419,GA
+Pieter,,Wycoff,3794 Francine Court,,pieter0@adventure-works.com,354-555-0161,420,GA
+Jenny,,Nath,2530 Willow Court,,jenny41@adventure-works.com,110-555-0167,403,FL
+Andre,,Sai,2530 C Del Rio Circle,,andre5@adventure-works.com,724-555-0116,402,FL

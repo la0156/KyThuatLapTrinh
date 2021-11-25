@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Bai35", "Bai35\Bai35.dtproj", "{3EDC6B39-04F2-4932-9F93-5B51D14BE53E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EDC6B39-04F2-4932-9F93-5B51D14BE53E}.Development|Default.ActiveCfg = Development
+		{3EDC6B39-04F2-4932-9F93-5B51D14BE53E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC482A37-FB28-4B46-BA5D-6B3D3664F5AE}
+	EndGlobalSection
+EndGlobal
